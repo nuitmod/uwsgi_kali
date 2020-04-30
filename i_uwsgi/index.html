@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="This is a PWA called i_uwsgi">
+        <meta name="keywords" content="pwa" >
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="author" content="" />
+        <meta name="copyright" content="" />
+        <meta name="robots" content="follow"/>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="i_uwsgi">
+        <meta property="og:url" content="">
+        <meta property="og:image:secure_url" itemprop="image" content="">
+        <meta property="og:image" itemprop="image" content="">
+        <meta property="og:image:width" content="700" />
+        <meta property="og:image:height" content="700" />
+        <meta property="og:image:alt" content="OG image of i_uwsgi" />
+        <meta property="og:description" content="This is a PWA called i_uwsgi">
+        <meta property="og:site_name" content="i_uwsgi">
+        <meta name="fragment" content="!">
+        <link rel=icon sizes=192x192 href="assets/logo-192.png">
+        <meta name="theme-color" content="#0099ff" />
+        <title>i_uwsgi</title>
+        <link rel="manifest" href="manifest.json">
+        <style>
+          body{
+            margin: 0;
+            padding: 0;
+          }
+
+            :root{
+                --theme:#0099ff;
+            }
+            a{text-decoration:none;color:var(--theme)}
+        </style>
+    </head>
+    <body>
+      <h5>i_uwsgi</h5>
+      <div class="">
+        <img src="./img/mod_rnw.PNG" alt="" height="119" width="209" />
+      </div>
+
+    <script>
+
+    // ServiceWorker Registration
+    if('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('sw.js').then(function(registration) {
+                // Registration was successful
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+
+            }, function(err) {
+                // registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+
+
+    </script>
+    </body>
+</html>
