@@ -33,7 +33,7 @@ $('.mobile-tab').hide();
   mobileNav.addEventListener('click', closeMobile);
 */
 
-  //$('.mobile').hide();
+$('.mobile').hide();
 $('.bar_fi').on('click', function(){
   $('.mobile').slideToggle(300)
 });
