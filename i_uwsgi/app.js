@@ -14,5 +14,30 @@ if('serviceWorker' in navigator) {
 
 $('.mobile-tab').hide();
   $('#burg').on('click', function(){
-    $('.mobile-tab').slideToggle(600)
+    $('.mobile-tab').slideToggle(450)
   });
+
+  /*
+  var hamburgerButton = document.querySelector('.bar_fi');
+  var mobileNav = document.querySelector('.mobile');
+
+  function openMobile() {
+      mobileNav.classList.add('open');
+  }
+
+  function closeMobile() {
+      mobileNav.classList.remove('open');
+  }
+
+  hamburgerButton.addEventListener('click', openMobile);
+  mobileNav.addEventListener('click', closeMobile);
+*/
+
+  //$('.mobile').hide();
+$('.bar_fi').on('click', function(){
+  $('.mobile').slideToggle(300)
+});
+
+$('.mobile').on('click', function(){
+    $('.mobile').slideToggle(300)
+})
