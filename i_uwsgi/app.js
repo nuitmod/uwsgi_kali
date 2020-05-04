@@ -39,5 +39,14 @@ $('.bar_fi').on('click', function(){
 });
 
 $('.mobile').on('click', function(){
-    $('.mobile').slideToggle(300)
+    $('.mobile').hide(500)
+})
+//2 menu
+$('.mobile2').hide();
+$('.bar_2').on('click', function(){
+  $('.mobile2').fadeToggle(200)
+});
+
+$('.mobile2').on('click', function(){
+    $('.mobile2').fadeToggle(200)
 })
