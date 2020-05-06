@@ -24,17 +24,15 @@ $('.mobile-tab').hide();
   function openMobile() {
       mobileNav.classList.add('open');
   }
-
   function closeMobile() {
       mobileNav.classList.remove('open');
   }
-
   hamburgerButton.addEventListener('click', openMobile);
   mobileNav.addEventListener('click', closeMobile);
 */
-
+// 1 mrnu
 $('.mobile').hide();
-$('.bar_fi').on('click', function(){
+$('.bar_1').on('click', function(){
   $('.mobile').slideToggle(300)
 });
 
