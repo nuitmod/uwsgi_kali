@@ -33,6 +33,32 @@
       <script async src="https://cdn.ampproject.org/v0.js"></script>
       <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
       <script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
+      <style media="screen">
+      amp-accordion {
+        background:  black;
+
+      }
+      amp-accordion a{
+        background:  black;
+        color: ghostwhite;
+        text-decoration: none;
+        padding: 0 5px;
+      }
+      amp-accordion .amp_a{
+        background: black;
+        width: auto;
+        height: 8px;
+      }
+      audio{
+        height: 10px;
+        width: 219px;
+        color:  black;
+        background-color:  black;
+      }
+      #my_audio{
+        width: 50%;
+      }
+      </style>
   </head>
   <body>
     <section>
@@ -109,12 +135,13 @@
         </nav>
       </div>
     </section>
-    <section>
+    <section id="content" style="width:50%">
       <div class="">
           <img src="./img/illx.JPG" alt="" height="99" width="59" /><br>
-          <img src="./img/ier.JPG" alt="" height="99" width="59" />
+          <img src="./img/ier.JPG" alt="" height="99" width="59" /><br>
+          <img src="./img/code.jpg" alt="" height="59" width="99" />
       </div>
-        <h6>Kyoka_::pc_125_bpm_live</h6>
+        <!-- <h6>Kyoka_::pc_125_bpm_live</h6>
         <audio preload="none" controls>
          <source src="./audio/Kyoka_pc_125_bpm_live.mp3" type="audio/mpeg">
         </audio>
@@ -123,11 +150,26 @@
         <h6>Kyoka_::tokyo_live_live</h6>
         <audio preload="none" controls>
          <source src="./audio/Kyoka-Tokyo_live.mp3" type="audio/mpeg">
-        </audio>
-        <div>
+        </audio> -->
+        <!-- <div>
           <img src="./img/code.jpg" alt="" height="59" width="99" />
-        </div>
+        </div> -->
     </section>
+    <amp-accordion id="my_audio" disable-session-states>
+  <section>
+    <h5 class="amp_a">Radio</h5>
+    <div>
+    <h6>Kyoka_::pc_125_bpm_live</h6>
+    <amp-audio preload="none" controls>
+     <source src="./audio/Kyoka_pc_125_bpm_live.mp3" type="audio/mpeg">
+    </amp-audio>
+    <h6>Kyoka_::tokyo_live_live</h6>
+    <amp-audio preload="none" controls>
+     <source src="./audio/Kyoka-Tokyo_live.mp3" type="audio/mpeg">
+    </amp-audio>
+    </div>
+  </section>
+</amp-accordion>
 <!--    <input type="button" name="" value="button" style="right: 0; position: absolute; background: black">-->
     <script src="./app.js"></script>
   </body>
