@@ -1,4 +1,4 @@
-var CACHE_NAME = 'version-2'; // bump this version when you make changes.
+var CACHE_NAME = 'version-3'; // bump this version when you make changes.
 // Put all your urls that you want to cache in this array
 var urlsToCache = [
     'index.html',
@@ -6,7 +6,6 @@ var urlsToCache = [
     'img/mod_rnw.PNG',
     'img/ier.JPG',
     'img/illx.JPG',
-    'audio/Kyoka_pc_125_bpm_live.mp3',
     'app.js',
     'css/style.css'
 ];
@@ -21,7 +20,6 @@ self.addEventListener('install', function(event) {
         })
     );
 });
-
 
 // keep fetching the requests from the user
 self.addEventListener('fetch', function(event) {

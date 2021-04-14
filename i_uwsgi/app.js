@@ -12,6 +12,7 @@ if('serviceWorker' in navigator) {
     });
 }
 
+
 $('.mobile-tab').hide();
   $('#burg').on('click', function(){
     $('.mobile-tab').slideToggle(450)
@@ -39,6 +40,7 @@ $('.bar_1').on('click', function(){
 $('.mobile').on('click', function(){
     $('.mobile').hide(500)
 })
+
 //2 menu
 $('.mobile2').hide();
 $('.bar_2').on('click', function(){

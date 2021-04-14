@@ -3,6 +3,8 @@
   padding: 0;
 }
 body{
+  -webkit-text-size-adjust: 100%;
+  font-size: 11px;
   opasity: 0.5;
 }
 #burg a{
